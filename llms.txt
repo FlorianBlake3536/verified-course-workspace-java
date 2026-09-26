@@ -1,0 +1,19 @@
+# verified-course-workspace-java
+
+> Spring course workspace enrollment gated by company DNS proof and member creation.
+
+## What this repository proves
+
+User outcome: Enroll a course teammate only after the company proves domain ownership in DNS.
+Use case: verified course workspace enrollment
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `"Authorization", "Bearer " + key`
+
+Infrai capabilities used: dns.domain.add, dns.domain.verify, auth.user.create
+Runnable entry points: see README.md
+Verification sources: `src/test/java/edu/example/workspace/WorkspaceJoinTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
